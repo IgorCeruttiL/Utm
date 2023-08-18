@@ -12,7 +12,7 @@ namespace UtmBuilder.Core.ValueObjects.Exceptions
         public static void ThrowIfNull(string? item, string message = DefaultErrorMessage)
         {
             if (string.IsNullOrEmpty(item))
-                throw new InvalidUrlException(message);
+                throw new InvalidCampaignException(message);
         }
     }
 }
